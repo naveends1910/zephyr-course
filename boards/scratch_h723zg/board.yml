@@ -1,0 +1,6 @@
+board:
+  name: scratch_h723zg
+  full_name: Scratch H723ZG
+  vendor: custom
+  socs:
+    - name: stm32h723xx
