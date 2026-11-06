@@ -1,0 +1,8 @@
+description: LED driven through the sensor API
+
+compatible: "custom,led-sensor"
+
+properties:
+  led-gpios:
+    type: phandle-array
+    required: true

@@ -1,0 +1,8 @@
+config LED_SENSOR
+	bool "LED sensor driver"
+	default y
+	depends on DT_HAS_CUSTOM_LED_SENSOR_ENABLED
+	depends on SENSOR
+	select GPIO
+	help
+	  Sensor-API driver that drives an on-board LED.

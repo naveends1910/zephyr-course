@@ -1,5 +1,11 @@
 / {
-    aliases {
-        app-led = &green_led;
-    };
+	aliases {
+		app-led = &green_led;
+	};
+
+	led_sensor: led_sensor {
+		compatible = "custom,led-sensor";
+		led-gpios = <&gpiob 0 GPIO_ACTIVE_HIGH>;
+		status = "okay";
+	};
 };
